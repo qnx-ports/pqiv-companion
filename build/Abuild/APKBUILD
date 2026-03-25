@@ -1,6 +1,6 @@
 pkgname=pqiv
 pkgver=2.13.2
-pkgrel=${pkgrel:-0}
+pkgrel=3
 pkgdesc="powerful image viewer with minimal UI"
 url="http://www.pberndt.com/Programme/Linux/pqiv/index.html"
 arch="all"
@@ -26,7 +26,6 @@ package() {
     make DESTDIR="$pkgdir" install
 }
 
-options="$options ${DISABLE_CHECK:+!check}"
 sha512sums="
 b44ca21a19e897c5698fd7358fbba0b60c6a040231e5729ddf4436d027060c944ad20e4f1fa668692a63b4e2c5d0f4cfc298d9e8d38c61e5d1f4986cfca7ed8a  pqiv-2.13.2.tar.gz
 ce8accaca62dcf57a0854669c2db9a02c5d49a328c4a4541622b0fa4b16cae3981947af9fc38ccd01ca898683e3998a74303cdb6d84d7665a93d9ad3fa9b1128  remove-avclose.patch
